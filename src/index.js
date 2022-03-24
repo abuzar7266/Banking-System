@@ -20,7 +20,7 @@ const store = createStore(
   rootReducer
 )
 
-document.title = 'Easy Rent'
+document.title = 'HBL Banking'
 
 ReactDOM.render(
   <Provider store={store}>

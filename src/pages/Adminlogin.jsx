@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Logo from '../assets/images/logo-02.png';
+import Logo from '../assets/images/logo.png';
 import '../assets/css/login.css';
 import axios from 'axios';
 axios.defaults.withCredentials = true;
@@ -40,45 +40,29 @@ axios.defaults.withCredentials = true;
                 }
    }
     return (
-        <div className='parent_div'>
-        <div className='child_div'>
-        <div className='col-4' >
+        <div className='col-12 col-md-4' >
         <div className='card'>
 
          <form onSubmit={prevent}>
                 <center>
                 <div className='box'>
-                    <img src={Logo} style={{"height":"200px"}}/>
+                    <img src={Logo} style={{"height":"100px"}}/>
                 </div>
-                <h3>Sign In</h3>
+                <h3>Admin Login</h3>
+                <div className='m-4 pl-2'><span className='alert alert-warning p-2'>Invalid username or password</span></div>
                 </center> 
 
                 <div className="form-group">
-                    <label>Username</label>
-                    <input type="text" onChange={(e)=>setUsername(e.target.value) }  className="form-control" placeholder="example@123" />
-                </div>
-
-                <div className="form-group">
+                    <label>Admin ID</label>
+                    <input type="username" onChange={(e)=>setPassword(e.target.value)} className="form-control" placeholder="Admin ID" />
                     <label>Password</label>
                     <input type="password" onChange={(e)=>setPassword(e.target.value)} className="form-control" placeholder="Password" />
                 </div>
-
-                <div className="form-group">
-                    <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                    </div>
-                </div>
-
-                <button type="button" onClick={ValidateLogin} className="btn btn-primary btn-block">Submit</button>
+                <button type="button" onClick={ValidateLogin} className="btn btn-primary btn-block">Login</button>
          </form>
-              
         </div> 
 
         </div>
-        </div>
-        </div>
-        
     )
 }
 

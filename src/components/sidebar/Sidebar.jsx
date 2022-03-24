@@ -14,12 +14,12 @@ const SidebarItem = props => {
 
     return (
         <div className="sidebar__item">
-            <div className={`sidebar__item-inner ${active}`}>
+            {<div className={`sidebar__item-inner ${active}`}>
                 <i className={props.icon}></i>
                 <span>
                     {props.title}
                 </span>
-            </div>
+    </div>}
         </div>
     )
 }
@@ -35,7 +35,7 @@ const Sidebar = props => {
             </div>
             {
                 sidebar_items.map((item, index) => (
-                    (((item.display_name=='Dashboard' || item.display_name=='Process Payment' || item.display_name=='Remove Products' || item.display_name=='Add Products')) || ((item.display_name=='Product Catalog'))) && (<Link to={item.route} key={index}>
+                    (<Link to={item.route} key={index}>
                         <SidebarItem
                             title={item.display_name}
                             icon={item.icon}
