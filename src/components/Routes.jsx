@@ -12,7 +12,16 @@ import addBeneficiary from '../pages/addBeneficiary';
 import addAccount from '../pages/addAccount';
 import addBillBen from '../pages/addBillBen';
 import Logout from '../pages/Logout';
-
+import PayBill from '../pages/PayBills'
+import Complaint from '../pages/Complaint'
+import Forgot from '../pages/RecoverPassword'
+import Cheque from '../pages/OrderChequeBook'
+import Cards from '../pages/CardsManage'
+import Activate from '../pages/ActivateNewCard'
+import OrderCard from '../pages/OrderCard'
+import Request from '../pages/Request'
+import Cheque_Req from '../pages/ChequeRequest'
+import Deactivate from '../pages/Deactivate'
 const Routes = () => {
     return (
         <Switch>
@@ -26,6 +35,16 @@ const Routes = () => {
             <Route path='/addbeneficiary' exact component={addAccount}/>
             <Route path='/addBillAcc' exact component={addBillBen}/>
             <Route path='/logout' exact component={Logout}/>
+            <Route path='/bill' exact component={PayBill}/>
+            <Route path='/complaint' exact component={Complaint}/>
+            <Route path='/recover' exact component={Forgot}/>
+            <Route path='/request_cheque' exact component={Cheque}/>
+            <Route path='/cards_manage' exact component={Cards}/>
+            <Route path='/activate' exact component={Activate}/>
+            <Route path='/order' exact component={OrderCard}/>
+            <Route path='/request_manage' exact component={Request}/>
+            <Route path='/cheque_request' exact component={Cheque_Req}/>
+            <Route path='/DT' exact component={Deactivate}/>
         </Switch>
     );
 }

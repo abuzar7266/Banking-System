@@ -1,29 +1,11 @@
 import React, {useEffect} from 'react'
-
-import { Link } from 'react-router-dom'
-
-import Chart from 'react-apexcharts'
-
-import { useSelector } from 'react-redux'
-
-import StatusCard from '../components/status-card/StatusCard'
-
-import Table from '../components/table/Table'
-
-import Badge from '../components/badge/Badge'
-
-import statusCards from '../assets/JsonData/status-card-data.json'
-
-
-const Dashboard = () => {
-
-    
-    const themeReducer = useSelector(state => state.ThemeReducer.mode)
+const Account = () => {
 
     return (<>
     <div className='container'>
         <div className='row' style={{backgroundColor:"gray",borderRadius:"10px"}}><button className='btn btn-success'>Back</button></div>
         <br />
+        <button onClick={()=>{window.location='http://localhost:3000/request_cheque'}} style={{color:'black',boxShadow:'black 1px 1px 10px',margin:'10px'}}>Request New Cheque Book</button>
         <div className='card' style={{backgroundColor:"gray",color:"white",fontSize:"16px"}}>
         <div className='card' style={{backgroundColor:"#292A2D",color:"white",fontSize:"16px"}}>
             <div className='row card-body' style={{backgroundColor:"#292A2D",color:"white",fontSize:"16px"}}>
@@ -44,4 +26,4 @@ const Dashboard = () => {
     </>)
 }
 
-export default Dashboard
+export default Account

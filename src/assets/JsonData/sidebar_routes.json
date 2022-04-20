@@ -11,7 +11,7 @@
     },
     {
         "display_name": "Cards Management",
-        "route": "/j",
+        "route": "/cards_manage",
         "icon": "bx bx-category-alt"
     },
     {
@@ -31,7 +31,12 @@
     },
     {
         "display_name": "Lodge Complaint",
-        "route": "/n",
+        "route": "/complaint",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Manage Request",
+        "route": "/request_manage",
         "icon": "bx bx-category-alt"
     },
     {

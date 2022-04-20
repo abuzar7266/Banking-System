@@ -56,6 +56,7 @@ axios.defaults.withCredentials = true;
                     <input type="username" onChange={(e)=>setPassword(e.target.value)} className="form-control" placeholder="Username" />
                     <label>Password</label>
                     <input type="password" onChange={(e)=>setPassword(e.target.value)} className="form-control" placeholder="Password" />
+                    <a href="./recover" style={{color:'green'}}>forgot my password?</a>
                 </div>
                 <button type="button" onClick={()=>{localStorage.setItem('login',1);window.location = "http://localhost:3000/user";}} className="btn btn-primary btn-block">Login</button>
                 <button type="button" onClick={()=>{window.location = "http://localhost:3000/register";}} className="btn btn-primary btn-block">Create a New Account</button>

@@ -1,30 +1,11 @@
-import React, {useEffect} from 'react'
-
-import { Link } from 'react-router-dom'
-
-import Chart from 'react-apexcharts'
-
-import { useSelector } from 'react-redux'
-
-import StatusCard from '../components/status-card/StatusCard'
-
-import Table from '../components/table/Table'
-
-import Badge from '../components/badge/Badge'
-
-import statusCards from '../assets/JsonData/status-card-data.json'
-
-
-const Dashboard = () => {
-
-    
-    const themeReducer = useSelector(state => state.ThemeReducer.mode)
+import React from 'react'
+const UserPanel = () => {
 
     return (<>
     <div className='container'>
         <div className='row badge badge-dark'>
             <div className='col-2'><button onClick={()=>{window.location="http://localhost:3000/sendmoney"}} className='btn btn-success'> Send Money </button></div>
-            <div className='col-2'><button className='btn btn-success'> Bill Payment </button></div>
+            <div className='col-2'><button className='btn btn-success' onClick={()=>{window.location="http://localhost:3000/bill"}}> Bill Payment </button></div>
             <div className='col-2'><button className='btn btn-success'> Mobile Recharge </button></div>
             <div className='col-2 ml-5'><button className='btn btn-success'> More </button></div>
         </div>
@@ -49,4 +30,4 @@ const Dashboard = () => {
     </>)
 }
 
-export default Dashboard
+export default UserPanel
