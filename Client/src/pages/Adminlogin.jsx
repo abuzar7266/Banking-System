@@ -60,8 +60,7 @@ axios.defaults.withCredentials = true;
                 </div>
                 <button type="button" onClick={ValidateLogin} className="btn btn-primary btn-block">Login</button>
          </form>
-        </div> 
-
+        </div>
         </div>
     )
 }

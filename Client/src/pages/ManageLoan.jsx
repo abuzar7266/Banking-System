@@ -64,7 +64,7 @@ const ManageLoan = () =>{
                 }
             })
         }
-    })
+    },[fetched])
     const handleRequestLoan = ()=>{
         if(user.pass===pass){
             setError(false);
@@ -117,7 +117,7 @@ const ManageLoan = () =>{
                     state===4 && <center><div className='card col-md-4'>
                     <h6>Request Completed</h6>
                     <p className='alert alert-success'>Your loan request application is under review,you will soon recieve the decision of loan request from our representative</p>
-                    <button onClick={()=>{window.location = 'http://localhost:3000/cards_manage'}} style={{borderRadius:'10px',width:'130px',margin:'10px'}}>Finish</button>
+                    <button onClick={()=>{window.location = 'http://localhost:3000/manageLoan'}} style={{borderRadius:'10px',width:'130px',margin:'10px'}}>Finish</button>
                     </div>
                     </center>
                 }
