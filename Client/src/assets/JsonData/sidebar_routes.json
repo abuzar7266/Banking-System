@@ -1,0 +1,52 @@
+[
+    {
+        "display_name": "Home",
+        "route": "/user",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "My Account",
+        "route": "/account",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Cards Management",
+        "route": "/cards_manage",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Beneficiary Management",
+        "route": "/beneficiary",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Loan Management",
+        "route": "/manageLoan",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Transaction Activity",
+        "route": "/transactionActivity",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Lodge Complaint",
+        "route": "/complaint",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Manage Request",
+        "route": "/request_manage",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Information & Help",
+        "route": "/help",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Logout",
+        "route": "/logout",
+        "icon": "bx bx-category-alt"
+    }
+]
